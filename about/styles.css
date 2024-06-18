@@ -1,0 +1,165 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Birdy383 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #79647c, #3200a6);
+  z-index: -1;
+}
+
+#Birdy384 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(250, 244, 255, 0.041) 0%, transparent 100%);
+  pointer-events: none;
+  animation: Birdy384 44s infinite linear;
+}
+
+@keyframes Birdy384 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 2000px;
+  }
+}
+
+#Birdy388 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(134, 255, 185, 0.1) 0%, transparent 100%);
+  pointer-events: none;
+  animation: Birdy388 40s infinite linear;
+}
+
+@keyframes Birdy388 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 2000px 0px;
+  }
+}
+
+#content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateZ(100px);
+  animation: text-rotate 8s 5s infinite linear;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 0.2em;
+  transform: translateZ(100px);
+  animation: text-rotate 0s infinite linear reverse;
+}
+
+
+p {
+  font-family: Bagel Fat One
+;
+  font-size: 1.8em;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 0.2em;
+  transform: translateZ(100px);
+}
+
+
+#menu {
+  margin-top: 1em;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 0 0.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s, transform 0.3s, font-size 0.3s;
+  display: inline-block;
+  font-family: Oswald;
+}
+
+a:hover {
+  color: #9affff;
+  transform: scale(1.2) rotateZ(20deg);
+  font-size: 5.5vw;
+}
+
+@keyframes text-rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transform: rotateZ(-20deg);
+  z-index: 1;
+}
+
+#logo span {
+  display: inline-block;
+  transform: rotateZ(20deg);
+  animation: logo-hover 3s infinite ease-in-out;
+}
+
+@keyframes logo-hover {
+  0% {
+    transform: rotateZ(20deg);
+  }
+  50% {
+    transform: rotateZ(-20deg);
+  }
+  100% {
+    transform: rotateZ(20deg);
+  }
+}
+
+
+.transition-element {
+  transition: all 4.3s ease;
+}
+
+.transition-element.initial-state {
+  opacity: 5;
+  transform: translateX(-170%);
+}
+
+.transition-element.target-state {
+  opacity: 1;
+  transform: translateX(0);
+}
+

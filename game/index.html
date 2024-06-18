@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="/Transitions/Transition.css">
+   <script src="Transitions/transitions.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title id="dynamicTitle">Big Johnson - By Birdy</title>
+  <link id="favicon" rel="icon" type="image/png" href="/favicon/Frame1.png">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <style>
+      h1 {
+         font-size: 7vw;
+      }
+
+      h2 {
+         font-size: 1vw; 
+      }
+
+      a {
+         font-size: 4vw;
+      }
+
+      @media (max-width: 1200px) {
+         h1 {
+            font-size: 14vw;
+         }
+
+         h2 {
+            font-size: 5vw;
+         }
+
+         a {
+            font-size: 9vw;
+         }
+      }
+
+      #content {
+         position: relative;
+         z-index: 1;
+      }
+
+
+      #game-menu {
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: calc(100% + 20px);
+         background: rgba(0, 0, 0, 0.8);
+         z-index: 999;
+         text-align: center;
+         padding-top: 20px;
+      }
+
+      #game-menu iframe {
+         width: 100%;
+         height: calc(100% + 20px);
+         border: none;
+         margin-top: -20px;
+      }
+
+      #game-menu .close-button-container {
+         position: absolute;
+         top: 15px;
+         right: 30px;
+      }
+
+      #game-menu .close-button {
+         color: #fff;
+         cursor: pointer;
+         font-size: 20px;
+         background-color: rgba(128, 0, 128, 0.8); /* Purple color with opacity */
+         border-radius: 10px;
+         padding: 5px;
+      }
+
+      #game-menu .close-button:hover {
+         color: #ff0000;
+      }
+   </style>
+</head>
+<body>
+   <div id="hill"></div>
+   <div id="rain"></div>
+   <div id="clouds"></div>
+   <div id="content">
+      <h1>Games Page</h1>
+      <div id="menu">
+         <a href="/">Home</a>
+         <a href="/about#Ik_Most_Basic_About_Page_Ever">About</a>
+         <a href="https://e-z.bio/birdy" target="_blank">E-Z Bio</a>
+         <a href="/game/">Other</a>
+     </div>
+      <div id="game-list">
+         <div class="game">
+            <img src="ActualGames/2048/meta/apple-touch-icon.png" alt="2048">
+            <h2></h2>
+            <a href="ActualGames/2048/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/alienhominid/alienhominid.jpeg" alt="alienhominid">
+            <h2></h2>
+            <a href="ActualGames/alienhominid/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/10-minutes-till-dawn/splash.png" alt="10-minutes-till-dawn">
+            <h2></h2>
+            <a href="ActualGames/10-minutes-till-dawn/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/1v1lol/splash.png" alt="1v1lol">
+            <h2></h2>
+            <a href="ActualGames/1v1lol/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/backrooms/icon.jfif" alt="backrooms">
+            <h2></h2>
+            <a href="ActualGames/backrooms/index.html" class="play-button">Play</a>
+         </div>
+      </div>
+      <div id="game-list">
+         <div class="game">
+            <img src="ActualGames/bitlife/logo.png" alt="bitlife">
+            <h2></h2>
+            <a href="ActualGames/bitlife/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/bloonstd/bloonstd.jpg" alt="bloonstd">
+            <h2></h2>
+            <a href="ActualGames/bloonstd/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/bloonstd2/bloonstd2.png" alt="bloonstd2">
+            <h2></h2>
+            <a href="ActualGames/bloonstd2/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/bloxors/block.png" alt="bloxors">
+            <h2></h2>
+            <a href="ActualGames/bloxors/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/cluster-rush/splash.png" alt="cluster-rush">
+            <h2></h2>
+            <a href="ActualGames/cluster-rush/index.html" class="play-button">Play</a>
+         </div>
+      </div>
+      <div id="game-list">
+         <div class="game">
+            <img src="ActualGames/townscaper/img/sample.png" alt="townscaper">
+            <h2></h2>
+            <a href="ActualGames/townscaper/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/FullScreenMario/Source/Theme/Mario.gif" alt="FullScreenMario">
+            <h2></h2>
+            <a href="ActualGames/FullScreenMario/Source/index.htm" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/interactivebuddy/interactivebuddy.jpg" alt="interactivebuddy">
+            <h2></h2>
+            <a href="ActualGames/interactivebuddy/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/sm64/logo.png" alt="getting-over-it">
+            <h2></h2>
+            <a href="ActualGames/sm64/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/jelly-truck/assets/loading/jt.png" alt="jelly-truck">
+            <h2></h2>
+            <a href="ActualGames/jelly-truck/index.html" class="play-button">Play</a>
+         </div>
+      </div>
+      <div id="game-list">
+         <div class="game">
+            <img src="ActualGames/justfall/splash.jpg" alt="justfall">
+            <h2></h2>
+            <a href="ActualGames/justfall/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/osu/src/images/osw.png" alt="osu">
+            <h2></h2>
+            <a href="ActualGames/osu/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/tanuki-sunset/img/cover.png" alt="tanuki-sunset">
+            <h2></h2>
+            <a href="ActualGames/tanuki-sunset/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/sort-the-court/img/splash.png" alt="sort-the-court">
+            <h2></h2>
+            <a href="ActualGames/sort-the-court/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/tiny-fishing/html5game/caption.png" alt="tiny-fishing">
+            <h2></h2>
+            <a href="ActualGames/tiny-fishing/index.html" class="play-button">Play</a>
+         </div>
+      </div>
+      <div id="game-list">
+         <div class="game">
+            <img src="ActualGames/superhot/hot.jpg" alt="osu">
+            <h2></h2>
+            <a href="ActualGames/superhot/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/subway-surfers/img/splash.jpg" alt="tanuki-sunset">
+            <h2></h2>
+            <a href="ActualGames/subway-surfers/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/slope/slope4.jpeg" alt="sort-the-court">
+            <h2></h2>
+            <a href="ActualGames/slope/index.html" class="play-button">Play</a>
+         </div>
+         <div class="game">
+            <img src="ActualGames/the-impossible-quiz/3cd96c99-46c1-4ff0-b04a-82381ea07349.png" alt="tiny-fishing">
+            <h2></h2>
+            <a href="ActualGames/the-impossible-quiz/index.html" class="play-button">Play</a>
+         </div>
+      </div>
+      <h2>Credit to 3kh0 He Deserves It For Ripping These Games </h2>
+   </div>
+
+   <div id="game-menu">
+      <div class="close-button-container">
+         <button class="close-button" onclick="closeGame()">×</button>
+      </div>
+      <iframe src="" frameborder="0"></iframe>
+   </div>
+
+   <script src="game.js"></script>
+   <script>
+      function closeGame() {
+         var gameMenu = document.getElementById('game-menu');
+         var iframe = document.querySelector('#game-menu iframe');
+         gameMenu.style.display = 'none';
+         iframe.setAttribute('src', '');
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+         var playButtons = document.getElementsByClassName('play-button');
+         var gameMenu = document.getElementById('game-menu');
+         var iframe = document.querySelector('#game-menu iframe');
+
+         for (var i = 0; i < playButtons.length; i++) {
+            playButtons[i].addEventListener('click', function(e) {
+               e.preventDefault();
+               var gameUrl = this.getAttribute('href');
+               iframe.setAttribute('src', gameUrl);
+               gameMenu.style.display = 'block';
+            });
+         }
+      });
+   </script>
+</body>
+</html>
