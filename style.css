@@ -1,10 +1,11 @@
-
 body {
   margin: 0;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
 #Pluh {
@@ -25,15 +26,15 @@ body {
   height: 100%;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
   pointer-events: none;
-  animation: STOPLOOKINGATMYFUCKINGCODEITSASSBRONOTWORTHSTEALINGFRFR 44s infinite linear;
+  animation: gradient-animation-vertical 44s infinite linear;
 }
 
-@keyframes STOPLOOKINGATMYFUCKINGCODEITSASSBRONOTWORTHSTEALINGFRFR {
+@keyframes gradient-animation-vertical {
   0% {
-    background-position: 0px 0px;
+    transform: translateY(0);
   }
   100% {
-    background-position: 0px 2000px;
+    transform: translateY(2000px);
   }
 }
 
@@ -45,27 +46,27 @@ body {
   height: 100%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
   pointer-events: none;
-  animation: nglfeelinglittlezesty 40s infinite linear;
+  animation: gradient-animation-horizontal 40s infinite linear;
 }
 
-@keyframes nglfeelinglittlezesty {
+@keyframes gradient-animation-horizontal {
   0% {
-    background-position: 0px 0px;
+    transform: translateX(0);
   }
   100% {
-    background-position: 2000px 0px;
+    transform: translateX(2000px);
   }
 }
 
 #content {
   text-align: center;
+  z-index: 1;
 }
 
 h1 {
   font-size: 3em;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transform: translateZ(100px);
   animation: text-rotate 8s 5s infinite linear;
 }
 
@@ -74,27 +75,26 @@ h2 {
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   margin-top: 0.2em;
-  transform: translateZ(100px);
 }
 
 #menu {
   margin-top: 1em;
 }
+
 a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2em;
   margin: 0 0.5em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  transition: color 0.3s, transform 0.3s, font-size 0.3s;
+  transition: color 0.3s, transform 0.3s;
   display: inline-block;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
 }
 
 a:hover {
   color: #9affff;
-  transform: scale(1.2) rotateZ(20deg);
-  font-size: 5.5vw;
+  transform: scale(1.2) rotate(20deg);
 }
 
 @keyframes text-rotate {
@@ -113,40 +113,34 @@ a:hover {
   font-size: 2em;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  transform: rotateZ(-20deg);
+  transform: rotate(-20deg);
   z-index: 1;
 }
 
 #logo span {
   display: inline-block;
-  transform: rotateZ(20deg);
   animation: logo-hover 3s infinite ease-in-out;
 }
 
 @keyframes logo-hover {
-  0% {
-    transform: rotateZ(20deg);
+  0%, 100% {
+    transform: rotate(20deg);
   }
   50% {
-    transform: rotateZ(-20deg);
-  }
-  100% {
-    transform: rotateZ(20deg);
+    transform: rotate(-20deg);
   }
 }
 
-
 .transition-element {
-  transition: all 4.3s ease;
+  transition: all 0.3s ease;
 }
 
 .transition-element.initial-state {
-  opacity: 5;
-  transform: translateX(-170%);
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
 .transition-element.target-state {
   opacity: 1;
   transform: translateX(0);
 }
-
