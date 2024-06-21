@@ -1,11 +1,11 @@
 body {
-  background-color: #F5F5DC;
+  background-color: #c05fd3;
   animation: transitionIn 4.25s;
 }
 
 @keyframes transitionIn {
   from {
-    opacity: 0;
+    opacity: 0.4;
     transform: rotateX('-60deg');
   }
   to {
