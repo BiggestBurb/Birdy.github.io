@@ -5,7 +5,7 @@ body {
 
 @keyframes transitionIn {
   from {
-    opacity: 0.4;
+    opacity: 0.4secs;
     transform: rotateX('-60deg');
   }
   to {
